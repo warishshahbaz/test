@@ -85,6 +85,11 @@ const Schema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    // profile_url: {
+    //   type: String,
+    //   required: true,
+    //   trim: true,
+    // },
     is_deleted: {
       type: Boolean,
       required: true,

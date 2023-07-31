@@ -45,12 +45,12 @@ const About = () => {
       <div className="grid sm:grid-cols-2 p-2  ">
         <img
           className=" shadow-lg   grid row-span-2 md:h-[600px] md:w-[100%]  object-contain h-[100%]  object-cover"
-          src="./image/sonu.jpg"
-          alt="sonu"
+          // src="./image/sonu.jpg"
+          alt="md"
         />
         <span className="md:text-2xl text-lg font-normal font-serif text-[gray] p-2">
           {" "}
-          Managing Director : MR SONU VERMA
+          Managing Director 
         </span>
         <p className="p-3 text-lg font-sen md:text-2xl md:text-center ">
           After completing my BTech CSE was looking for a career where I can live
@@ -77,11 +77,11 @@ const About = () => {
           <div className="w-[100%]  object-cover  ">
             <img
               className="w-[270px] h-[300px] object-cover rounded-lg  "
-              src="/image/ceo.jpg"
-              alt="leo"
+              // src="/image/ceo.jpg"
+              alt="ceo"
             />
           </div>
-          <h5>MR SHAHBAZ Warish</h5>
+          {/* <h5>MR SHAHBAZ Warish</h5> */}
           <p>CEO</p>
         </motion.div>
         <motion.div
@@ -90,37 +90,37 @@ const About = () => {
         >
           <img
             className="w-[250px] h-[300px] object-cover rounded-lg "
-            src="/image/leo.png"
-            alt="leo"
+            // src="/image/leo.png"
+            alt="cto"
           />
-          <h5>MR Audesh Shukla</h5>
+          {/* <h5>MR Audesh Shukla</h5> */}
           <p>Chief Technology Officer</p>
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="w-[270px]  p-3 shadow-lg m-2 text-center  ">
           <img
             className="w-[250px] h-[300px] object-cover rounded-lg "
-            src="/image/cto.jpeg"
-            alt="leo"
+            // src="/image/cto.jpeg"
+            alt="cmo"
           />
-          <h5>MR Aman Kumar</h5>
+          {/* <h5>MR Aman Kumar</h5> */}
           <p>Chief Marketing Officer</p>
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="w-[270px]  p-3 shadow-lg m-2 text-center">
           <img
             className="w-[250px] h-[300px] object-cover rounded-lg "
-            src="/image/employee3.jpg"
-            alt="leo"
+            // src="/image/employee3.jpg"
+            alt="cfo"
           />
-          <h5>MR Jamuna Prasad </h5>
+          {/* <h5>MR Jamuna Prasad </h5> */}
           <p>Chief Financial Officer</p>
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="w-[250px]   p-3 shadow-lg m-2 text-center ">
           <img
             className="w-[250px] h-[300px] object-cover rounded-lg "
-            src="/image/employee4.jpg"
-            alt="leo"
+            // src="/image/employee4.jpg"
+            alt="gm"
           />
-          <h5>MRS Abinaya K</h5>
+          {/* <h5>MRS Abinaya K</h5> */}
           <p>General Manager</p>
         </motion.div>
       </div>

@@ -38,14 +38,14 @@ const ContactUs = () => {
               <span>
                 <FcPhone className="text-2xl" />
               </span>
-              <p className="sm:text-xl">+91 38483764763</p>
-              <p className="sm:text-xl">+91 89273646654</p>
+              <p className="sm:text-xl">+91 7830360293</p>
+              {/* <p className="sm:text-xl">+91 89273646654</p> */}
             </div>
             <div>
               <span>
                 <GrMail className="text-2xl" />
               </span>
-              <p className="sm:text-xl">abc@gmail.com</p>
+              <p className="sm:text-xl">yuvapragati.pvt@gmail.com</p>
             </div>
           </div>
         </div>

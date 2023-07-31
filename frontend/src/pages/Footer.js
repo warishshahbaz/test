@@ -34,23 +34,23 @@ const Footer = () => {
           <div className="">
             <h2>Quick Link</h2>
             <div className=" flex flex-row justify-content-evenly gap-3">
-            <div>
-              <NavLink to={'/home'} className="no-underline " >
-              Home
-              </NavLink>
-                
+              <div>
+                <NavLink to={'/home'} className="no-underline " >
+                  Home
+                </NavLink>
+
               </div>
               <div>
-              <NavLink to={'/aboutus'} className="no-underline " >
-              About
-              </NavLink>
-                
+                <NavLink to={'/aboutus'} className="no-underline " >
+                  About
+                </NavLink>
+
               </div>
               <div>
-              <NavLink to={'/conatctus'} className="no-underline " >
-              Contact
-              </NavLink>
-                
+                <NavLink to={'/conatctus'} className="no-underline " >
+                  Contact
+                </NavLink>
+
               </div>
             </div>
           </div>
@@ -112,8 +112,8 @@ const Footer = () => {
 
           <div className="">
             <h2>Contact Info</h2>
-            <span> 763764356742 </span>
-            <p> abc@mail.com </p>
+            <span> 7830360293 </span>
+            <p> yuvapragati.pvt@gmail.com </p>
           </div>
         </div>
       </div>

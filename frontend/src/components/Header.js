@@ -14,7 +14,7 @@ function Header() {
       >
         <Container>
           <Navbar.Brand>
-            <img src={"/image/network logo.jpg"} className=" sm:w-[100px] w-[80px] "  alt="logo" />
+            <img src={"/image/network logo.jpg"} className=" sm:w-[100px] w-[80px] " alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle className="bg-white border-1  " aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -26,10 +26,10 @@ function Header() {
                 Home
               </NavLink>
               <NavLink to="/aboutus" className="li_item">
-                About 
+                About
               </NavLink>
               <NavLink to="/conatctus" className="li_item" eventKey={2}>
-                Contact 
+                Contact
               </NavLink>
               <NavLink to="/verify" className="li_item">
                 Register

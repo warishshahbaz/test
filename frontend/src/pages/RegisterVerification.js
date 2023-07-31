@@ -107,9 +107,9 @@ const Register = () => {
         >
           {!sponcerToggle ? (
             <>
-              <h3 className="text-center mb-3 text-[green] ">
+              <h1 className="text-center mb-3 text-[green] ">
                 Verify Sponcer ID
-              </h3>
+              </h1>
               <div className=" w-[100%] min-w-[400px] h-[40px] flex justify-around  content-start ">
                 <Form.Item
                   name="sponcer_id"
@@ -143,6 +143,15 @@ const Register = () => {
                 >
                   Verify
                 </Button>
+                {/* <Button
+                  onClick={submitSponcerHandler}
+                  style={{ background: '#0070f3', color: 'white', marginBottom: '4px' }}
+                  htmlType="submit"
+                >
+                  Verify
+                </Button> */}
+
+
               </div>
               {errorHandle && (
                 <h5 className="text-[red] ">Invalid Sponcer ID !</h5>

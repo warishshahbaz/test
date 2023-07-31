@@ -91,9 +91,23 @@ export default function Register() {
         console.log("Failed:", errorInfo);
     };
 
+    // const showModal = () => {
+    //     setIsModalOpen(true);
+    // };
+
+    // const [isModalOpen, setIsModalOpen] = useState(false);
+
     const showModal = () => {
         setIsModalOpen(true);
     };
+
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+
+    // const handleCancel = () => {
+    //     setIsModalOpen(false);
+    // };
 
     const getVarifactionCode = () => {
         console.log(registerObj.phone, registerObj);
@@ -163,7 +177,7 @@ export default function Register() {
             // setPagePropertyColor('white')
             // setfillDetailsColor('white')
             setShowSuccess(true)
-            // showModal()
+            showModal()
         }).catch((error) => {
             console.log(error.response.data?.message)
         })
@@ -211,14 +225,14 @@ export default function Register() {
                                 type: "name",
                                 message: "The input is not valid Name !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[52px] flex ">
-                            //       Please fill your Name !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[52px] flex ">
+                                  Please fill your Name !
+                                </p>
+                              ),
+                            },
                         ]}
                         hasFeedback
                     >
@@ -233,14 +247,14 @@ export default function Register() {
                                 type: "name",
                                 message: "The input is not valid Father Name !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[28px] flex ">
-                            //       Please fill your Father Name !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[28px] flex ">
+                                  Please fill your Father Name !
+                                </p>
+                              ),
+                            },
                         ]}
                         hasFeedback
                     >
@@ -257,14 +271,14 @@ export default function Register() {
                                 type: "radio",
                                 message: "The input is not valid Position !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[10px] flex ">
-                            //       Please choose your Position !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[10px] flex ">
+                                  Please choose your Position !
+                                </p>
+                              ),
+                            },
                         ]}
                         hasFeedback
                     >
@@ -283,14 +297,14 @@ export default function Register() {
                                 type: "date",
                                 message: "The input is not valid DOB !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[100px] flex ">
-                            //       Please fill your DOB !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[100px] flex ">
+                                  Please fill your DOB !
+                                </p>
+                              ),
+                            },
                         ]}
                         hasFeedback
                     >
@@ -310,14 +324,14 @@ export default function Register() {
                                 type: "radio",
                                 message: "The input is not valid Gender !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[22px] flex ">
-                            //       Please choose your Gender !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[22px] flex ">
+                                  Please choose your Gender !
+                                </p>
+                              ),
+                            },
                         ]}
                     >
                         <Radio.Group className="w-[230px] ml-1 justify-between items-center">
@@ -340,14 +354,14 @@ export default function Register() {
                                     </p>
                                 ),
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[90px] flex ">
-                            //       Please fill your Email !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[90px] flex ">
+                                  Please fill your Email !
+                                </p>
+                              ),
+                            },
                         ]}
                         hasFeedback
                     >
@@ -364,14 +378,14 @@ export default function Register() {
                                 type: "contact",
                                 message: "The input is not valid Contact No !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[32px] flex ">
-                            //       Please fill your Contact No !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[32px] flex ">
+                                  Please fill your Contact No !
+                                </p>
+                              ),
+                            },
                             {
                                 pattern: new RegExp(/^(0|91)?[6-9][0-9]{9}$/),
                                 message: (
@@ -396,14 +410,14 @@ export default function Register() {
                                 type: "name",
                                 message: "The input is not valid Country !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[60px] flex ">
-                            //       Please fill your Country !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[60px] flex ">
+                                  Please fill your Country !
+                                </p>
+                              ),
+                            },
                         ]}
                     >
                         <Input className="w-[235px] ml-6 justify-between items-center" />
@@ -420,14 +434,14 @@ export default function Register() {
                                 type: "name",
                                 message: "The input is not valid State !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[60px] flex ">
-                            //       Please fill your State !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[60px] flex ">
+                                  Please fill your State !
+                                </p>
+                              ),
+                            },
                         ]}
                     >
                         <Input className="w-[230px] ml-5 justify-between items-center" />
@@ -442,14 +456,14 @@ export default function Register() {
                                 type: "name",
                                 message: "The input is not valid City !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[90px] flex ">
-                            //       Please fill your City !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[90px] flex ">
+                                  Please fill your City !
+                                </p>
+                              ),
+                            },
                         ]}
                     >
                         <Input className="w-[235px] ml-12 justify-between items-center" />
@@ -484,14 +498,14 @@ export default function Register() {
                                 type: "name",
                                 message: "The input is not valid Pincode !",
                             },
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[70px] flex ">
-                            //       Please fill your Pincode !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[70px] flex ">
+                                  Please fill your Pincode !
+                                </p>
+                              ),
+                            },
                         ]}
                     >
                         <Input className="w-[240px] ml-6 justify-between items-center" />
@@ -505,26 +519,15 @@ export default function Register() {
                         dependencies={["password"]}
                         hasFeedback
                         rules={[
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[15px] flex ">
-                            //       Please confirm your password !
-                            //     </p>
-                            //   ),
-                            // },
-                            ({ getFieldValue }) => ({
-                                validator(_, value) {
-                                    if (!value || getFieldValue("password") === value) {
-                                        return Promise.resolve();
-                                    }
-                                    return Promise.reject(
-                                        new Error(
-                                            "The two passwords that you entered do not match !"
-                                        )
-                                    );
-                                },
-                            }),
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[15px] flex ">
+                                  Please confirm your password !
+                                </p>
+                              ),
+                            },
+                           
                         ]}
                     >
                         <Input.Password className="w-[230px] mr-[64px] " />
@@ -537,14 +540,14 @@ export default function Register() {
                         dependencies={["password"]}
                         hasFeedback
                         rules={[
-                            // {
-                            //   required: true,
-                            //   message: (
-                            //     <p className="w-[200px]  ml-[50px] flex ">
-                            //       Please confirm your password !
-                            //     </p>
-                            //   ),
-                            // },
+                            {
+                              required: true,
+                              message: (
+                                <p className="w-[200px]  ml-[50px] flex ">
+                                  Please confirm your password !
+                                </p>
+                              ),
+                            },
                             ({ getFieldValue }) => ({
                                 validator(_, value) {
                                     if (!value || getFieldValue("password") === value) {
@@ -552,7 +555,7 @@ export default function Register() {
                                     }
                                     return Promise.reject(
                                         new Error(
-                                            "The two passwords that you entered do not match !"
+                                            "Passwords not match !"
                                         )
                                     );
                                 },
@@ -635,9 +638,11 @@ export default function Register() {
 
         {/* {showSuccess && <Modal> <SuccessRegister message={registerApiResponse} /></Modal>} */}
 
-        {showSuccess &&
-            < SuccessRegister message={registerApiResponse} />
-        }
+
+        <Modal footer={null} open={isModalOpen} >
+            <SuccessRegister message={registerApiResponse} />
+        </Modal>
+
     </div >
 
 
