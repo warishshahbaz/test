@@ -14,9 +14,16 @@ function Header() {
       >
         <Container>
           <Navbar.Brand>
-            <img src={"/image/network logo.jpg"} className=" sm:w-[100px] w-[80px] " alt="logo" />
+            <img
+              src={"/image/network logo.jpg"}
+              className=" sm:w-[100px] w-[80px] "
+              alt="logo"
+            />
           </Navbar.Brand>
-          <Navbar.Toggle className="bg-white border-1  " aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            className="bg-white border-1  "
+            aria-controls="responsive-navbar-nav"
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto header_items ">
               {/* <Nav.Link>logo</Nav.Link> */}

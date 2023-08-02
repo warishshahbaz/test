@@ -74,7 +74,6 @@ const Register = () => {
       )
         .then((result) => {
           console.log(result.data);
-
           setSponcerToggle(true);
         })
         .catch((error) => {
